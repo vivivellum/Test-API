@@ -1,0 +1,9 @@
+{
+  "LaptopParts" : [
+    {
+      "id": 0,
+      "name": "Screen",
+      "brand": "Lenova"
+    }
+    ]
+}
