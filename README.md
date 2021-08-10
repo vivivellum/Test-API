@@ -1,3 +1,4 @@
-# Laptop Parts
+# Test API
 
-I have no idea what this API will be, just messing around.
+I have no set plans for this, I am just messing around.
+Feel free to take a look and see what's going on.
