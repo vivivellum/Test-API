@@ -85,4 +85,6 @@ This table describes each item in the response:
 | size | Length of the part in inches. | Integer |
 | weight | Weight of the part in pounds. | Integer |
 | {model} | The type and model that uses the part. | Object |
+| {model}/type | The type of computer. Laptop, Desktop, or AIO. | Object |
+| {model}/modelNo | The model number of the computer. Assigned by manufacturer. | Object |
 
