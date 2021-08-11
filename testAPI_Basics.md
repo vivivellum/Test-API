@@ -40,3 +40,10 @@ Summary goes here.
 
 Summary goes here.
 
+| Method | Action |
+| --- | --- |
+| GET | Retrieve a resource |
+| POST | Create a resource |
+| PUT | Change or replace a resource |
+| DELETE | Delete a resource|
+
