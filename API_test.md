@@ -1,7 +1,3 @@
-# Coding API Example
-
-This page contains a few examples of coding API documentation.
-
 # LaptopPart
 
 Contains information about different laptop parts, including brand, size, weight, and associated models.
