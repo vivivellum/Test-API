@@ -1,9 +1,26 @@
 {
-  "LaptopParts" : [
+  "LaptopPart" : [
     {
       "id": 0,
       "name": "Screen",
-      "brand": "Lenova"
+      "brand": "Lenova",
+      "size": "15 inches",
+      "weight": 5,
+      "model": {
+        "type": "laptop",
+        "modelNo": "G500"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Power Supply",
+      "brand": "Dell",
+      "size": "5 inches",
+      "weight": 10,
+      "model": {
+        "type": "desktop",
+        "modelNo": "Y602"
+      }
     }
     ]
 }
