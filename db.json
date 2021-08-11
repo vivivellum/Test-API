@@ -4,7 +4,7 @@
       "id": 0,
       "name": "Screen",
       "brand": "Lenova",
-      "size": "15 inches",
+      "size": 15,
       "weight": 5,
       "model": {
         "type": "laptop",
@@ -15,7 +15,7 @@
       "id": 1,
       "name": "Power Supply",
       "brand": "Dell",
-      "size": "5 inches",
+      "size": 5,
       "weight": 10,
       "model": {
         "type": "desktop",
