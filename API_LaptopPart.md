@@ -27,7 +27,7 @@ Contains information about different laptop parts, including brand, size, weight
 ```
 
 ## Endpoints
-`GET` | `https://samplesite.org/LaptopPart/{id}` 
+`GET` | `https://samplesite.org/LaptopPart/{brandName}` 
 
 Gets the Laptop part with the specific id.
 
@@ -39,16 +39,50 @@ Gets the Laptop part with the specific id.
 
 | Parameter | Description |
 | :--- | :--- |
-| {id} | Unique indentifier for the part object. |
+| {brandName} | Unique indentifier for the part object. |
 
 ### Query String Parameters
 
 | Parameter | Type | Required/Optional | Description |
 | :--- | :--- | :---: | :--- |
-| brand | `String` | Optional | If you include brand, then only parts with that brand will show up. |
+| size | `Integer` | Optional | If you include size, will only return parts with that size. |
 
 ## Sample Request
 
+`curl -I -X GET "https://samplesite.org/LaptopPart/Dell?size=5"`
+
 ## Sample Response
 
+The following is a sample response from the LaptopPart/{id} endpoint:
+
+```
+{
+"LaptopPart" : [
+    {
+      "id": 1,
+      "name": "Power Supply",
+      "brand": "Dell",
+      "size": 5,
+      "weight": 10,
+      "model": {
+        "type": "desktop",
+        "modelNo": "Y602"
+      }
+    }
+  ]
+}
+```
+
+### Response Definitions
+
+This table describes each item in the response:
+
+| Response Item | Description | Data Type |
+| :--- | :--- | :--- |
+| id | The id of the part. | Integer |
+| name | Part name. | String |
+| brand | Brand name selected based on the brand in the request. The brand name of the part (usually manufacturer). | String |
+| size | Length of the part in inches. | Integer |
+| weight | Weight of the part in pounds. | Integer |
+| {model} | The type and model that uses the part. | Object |
 
