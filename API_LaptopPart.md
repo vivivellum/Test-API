@@ -27,12 +27,25 @@ Contains information about different laptop parts, including brand, size, weight
 ```
 
 ## Endpoints
+`GET` | `https://samplesite.org/LaptopPart/{id}` 
+
+Gets the Laptop part with the specific id.
+
+[//]: # (Comment - alternatively, could list just LaptopPart/{id})
 
 ## Parameters
 
 ### Path Parameters
 
+| Parameter | Description |
+| :--- | :--- |
+| {id} | Unique indentifier for the part object. |
+
 ### Query String Parameters
+
+| Parameter | Type | Required/Optional | Description |
+| :--- | :--- | :---: | :--- |
+| brand | `String` | Optional | If you include brand, then only parts with that brand will show up. |
 
 ## Sample Request
 
